@@ -3,7 +3,7 @@ import { ReactComponent as Instagram } from "../../assets/instagram.svg";
 import { Container } from "./styles";
 export default function Footer(props) {
   return (
-    <Container>
+    <Container data-aos="zoom-in-down">
       <Instagram />
       <span>Nosso contato</span>
       <a>contato@constante.app</a>

@@ -2,15 +2,16 @@ import styled from "styled-components";
 
 export const NavBar = styled.nav`
   position: fixed;
+  z-index: 3;
   display: flex;
+  height: 65px;
   justify-content: space-around;
   align-items: center;
+  margin-top: 36px;
   width: 100%;
 
-  -webkit-animation: fadeIn 2.5s ease-in-out;
-  -moz-animation: fadeIn 2.5s ease-in-out;
-  -o-animation: fadeIn 2.5s ease-in-out;
-  animation: fadeIn 2.5s ease-in-out;
+  .scrollActivated {
+  }
 `;
 export const Menu = styled.ul`
   width: auto;
@@ -36,4 +37,9 @@ export const Menu = styled.ul`
     transform: scale(1);
     animation: pulse 300ms;
   }
+
+  /* -webkit-animation: fadeIn 2.5s ease-in-out;
+  -moz-animation: fadeIn 2.5s ease-in-out;
+  -o-animation: fadeIn 2.5s ease-in-out;
+  animation: fadeIn 2.5s ease-in-out; */
 `;

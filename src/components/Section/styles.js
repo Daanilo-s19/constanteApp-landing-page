@@ -7,6 +7,9 @@ export const Container = styled.section`
   height: auto;
   background: #ffffff;
   border-radius: 40px 40px 0 0;
-  margin-top: -80px;
-  padding: 136px 123px;
+  margin-top: -100px;
+  padding: 136px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;

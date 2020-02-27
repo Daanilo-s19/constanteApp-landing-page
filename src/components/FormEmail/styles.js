@@ -24,14 +24,16 @@ export const Form = styled.form`
     border: 1px solid #dcdce0;
     box-sizing: border-box;
     border-radius: 40px;
-    background: none;
+    background: ${props => (props.background ? "#FFFFFF" : "none")};
+
     padding: 14px 24px;
+    color: ${props => (props.background ? "#909090" : "#FFFFFF")};
     &::placeholder {
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
       line-height: 21px;
-      color: #ffffff;
+      color: ${props => (props.background ? "#909090" : "#FFFFFF")};
     }
   }
 `;

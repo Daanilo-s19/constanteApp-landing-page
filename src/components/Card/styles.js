@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Content = styled.section`
-  width: 100%;
+  width: 80%;
   height: auto;
   padding: 30px;
   background: #009a93;

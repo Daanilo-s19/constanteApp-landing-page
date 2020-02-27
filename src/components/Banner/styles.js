@@ -2,9 +2,10 @@ import styled from "styled-components";
 import bgPhone from "../../assets/BG-phone.png";
 
 export const Content = styled.div`
-  width: 100%;
+  width: 80%;
   height: auto;
-  padding: 30px;
+  padding: 30px 0;
+  margin: 0 auto;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%),
     no-repeat url(${bgPhone});
   border-radius: 20px;
@@ -14,6 +15,10 @@ export const Content = styled.div`
   justify-content: space-around;
   .plataforms {
     margin-bottom: 120px;
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
   }
 
   h2 {

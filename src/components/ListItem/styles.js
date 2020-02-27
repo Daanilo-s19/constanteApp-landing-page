@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const Container = styled.div`
-  width: 100%;
+  width: 80%;
   height: auto;
   display: flex;
 
@@ -12,6 +12,11 @@ export const Item = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 30px;
+
+  img {
+    margin-bottom: 40px;
+  }
 
   strong {
     font-style: normal;

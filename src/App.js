@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import MenuBar from "./components/Menu";
 import Hero from "./components/Hero";
 import Header from "./components/Header";
@@ -8,18 +8,22 @@ import Card from "./components/Card";
 import Banner from "./components/Banner";
 import ListItem from "./components/ListItem";
 import Footer from "./components/Footer";
+import AOS from "aos";
 import { ReactComponent as NossoObjetivo } from "../src/assets/NossoObjetivo.svg";
 import { ReactComponent as ImgObjetivo } from "./assets/banner1.svg";
 import { ReactComponent as NewsLetter } from "../src/assets/newsletter.svg";
 import { ReactComponent as ImgNewsLetter } from "../src/assets/ImgNewsLetter.svg";
 import icon from "./assets/Ellipse46.png";
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <Hero>
         <MenuBar />
         <Header>
-          <FormEmail />
+          <FormEmail title="Junte-se à versão beta" />
         </Header>
       </Hero>
       <Section>
@@ -40,15 +44,15 @@ function App() {
               icon: icon
             },
             {
-              title: "Hábitos constantes",
+              title: "Relaxe sua mente",
               subtitle:
-                "Crie hábitos variados e recorrentes, sinta-se sempre motivado.",
+                "Fique com a mente tranquila durante o dia com resumos diários e lembretes antecipados.",
               icon: icon
             },
             {
-              title: "Hábitos constantes",
+              title: "Melhore todos os dia",
               subtitle:
-                "Crie hábitos variados e recorrentes, sinta-se sempre motivado.",
+                "Acompanhe os dias que você falhou e faça com que eles valham na próxima vez.",
               icon: icon
             }
           ]}
@@ -61,7 +65,7 @@ function App() {
               Fique por dentro do que estamos construindo <br /> e dicas para
               viver melhor.
             </h2>
-            <FormEmail />
+            <FormEmail backgroundInput={true} title="Inscreva-se" />
           </div>
           <ImgNewsLetter />
         </Card>
