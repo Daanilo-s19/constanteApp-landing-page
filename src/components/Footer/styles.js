@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Medium } from "../../utils/styles";
 
 export const Container = styled.footer`
   width: 100%;
@@ -9,6 +10,8 @@ export const Container = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 6;
   div {
     width: 80%;
     border-top: 1px solid #909090;
@@ -41,5 +44,9 @@ export const Container = styled.footer`
     color: #009a93;
     margin-bottom: 36px;
     cursor: pointer;
+  }
+
+  @media (max-width: ${Medium}) {
+    padding: 40px 23px;
   }
 `;

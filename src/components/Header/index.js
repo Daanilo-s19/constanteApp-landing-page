@@ -1,6 +1,5 @@
 import React from "react";
 import { ReactComponent as IphoneX } from "../../assets/iPhoneX1.svg";
-import SejaConstante from "../../assets/sejaConstante.png";
 import { ReactComponent as VivaMelhor } from "../../assets/Vivamelhor.svg";
 import { Container } from "./styles";
 
@@ -15,12 +14,12 @@ export default function Header(props) {
         </h1>
         <label>estamos em fase de testes</label>
         {children}
-        <div className="be-constante">
+        {/* <div className="be-constante">
           <span>seja Constante</span>
           <img src={SejaConstante} alt="seja constante" />
-        </div>
+        </div> */}
       </div>
-      <IphoneX />
+      <IphoneX className="image-iphone" />
     </Container>
   );
 }

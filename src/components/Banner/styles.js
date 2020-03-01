@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Medium } from "../../utils/styles";
 import bgPhone from "../../assets/BG-phone.png";
 
 export const Content = styled.div`
@@ -38,5 +39,29 @@ export const Content = styled.div`
     text-align: center;
     color: #8c8c8f;
     margin-bottom: 48px;
+  }
+  @media (max-width: ${Medium}) {
+    img {
+      width: 626px;
+    }
+    h2 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    span {
+      font-size: 12px;
+      margin: 0 15px 48px;
+      line-height: 18px;
+      text-align: center;
+    }
+    .plataforms {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 173.4px;
+        margin-bottom: 32px;
+      }
+    }
   }
 `;

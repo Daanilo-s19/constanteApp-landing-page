@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Medium } from "../../utils/styles";
 export const NavBar = styled.nav`
   position: fixed;
   z-index: 3;
@@ -9,8 +9,10 @@ export const NavBar = styled.nav`
   align-items: center;
   margin-top: 36px;
   width: 100%;
+  top: 0;
 
-  .scrollActivated {
+  @media (max-width: ${Medium}) {
+    padding: 0 18px;
   }
 `;
 export const Menu = styled.ul`
@@ -23,6 +25,9 @@ export const Menu = styled.ul`
   color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
 
+  @media (max-width: ${Medium}) {
+    display: none;
+  }
   li {
     margin: 0 18px;
     &:hover {

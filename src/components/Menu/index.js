@@ -14,11 +14,12 @@ export default function MenuBar(props) {
 
   window.addEventListener("scroll", () => {
     const windowTop = window.pageYOffset;
+    // console.log(windowTop);
     setScroll(windowTop);
   });
 
   return (
-    <NavBar data-aos="fade-up" style={scroll > 10 ? scrollActivated : null}>
+    <NavBar data-aos="fade-up" style={scroll > 523 ? scrollActivated : null}>
       <LogoConstante />
       <Menu>
         <li

@@ -1,8 +1,9 @@
 import styled from "styled-components";
-
+import { Medium } from "../../utils/styles";
 export const Form = styled.form`
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   margin-top: 18px;
 
   button {
@@ -34,6 +35,18 @@ export const Form = styled.form`
       font-size: 14px;
       line-height: 21px;
       color: ${props => (props.background ? "#909090" : "#FFFFFF")};
+    }
+  }
+  @media (max-width: ${Medium}) {
+    flex-direction: column;
+    align-items: center;
+    button {
+      width: 100%;
+      margin: 0 0 60px;
+    }
+    input {
+      width: 100%;
+      margin: 0 0 10px;
     }
   }
 `;

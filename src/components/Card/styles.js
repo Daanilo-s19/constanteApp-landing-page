@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Medium } from "../../utils/styles";
 
 export const Content = styled.section`
   width: 80%;
@@ -17,5 +18,13 @@ export const Content = styled.section`
     font-size: 24px;
     line-height: 36px;
     color: #c7f9e5;
+  }
+  @media (max-width: ${Medium}) {
+    flex-direction: column;
+    h2 {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+    }
   }
 `;

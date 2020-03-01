@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import MenuBar from "./components/Menu";
 import Hero from "./components/Hero";
 import Header from "./components/Header";
@@ -8,6 +8,7 @@ import Card from "./components/Card";
 import Banner from "./components/Banner";
 import ListItem from "./components/ListItem";
 import Footer from "./components/Footer";
+import Pointer from "./components/PointerConstante";
 import AOS from "aos";
 import { ReactComponent as NossoObjetivo } from "../src/assets/NossoObjetivo.svg";
 import { ReactComponent as ImgObjetivo } from "./assets/banner1.svg";
@@ -20,20 +21,22 @@ function App() {
   }, []);
   return (
     <>
+      <MenuBar />
       <Hero>
-        <MenuBar />
         <Header>
           <FormEmail title="Junte-se à versão beta" />
         </Header>
       </Hero>
+
       <Section>
+        <Pointer />
         <Card>
-          <NossoObjetivo />
+          <NossoObjetivo width="100%" />
           <h2>
             É mudar a vida das pessoas
             <br /> através de bons hábitos
           </h2>
-          <ImgObjetivo />
+          <ImgObjetivo width="100%" />
         </Card>
         <ListItem
           item={[
@@ -60,14 +63,14 @@ function App() {
         <Banner />
         <Card>
           <div>
-            <NewsLetter />
+            <NewsLetter width="100%" />
             <h2>
               Fique por dentro do que estamos construindo <br /> e dicas para
               viver melhor.
             </h2>
             <FormEmail backgroundInput={true} title="Inscreva-se" />
           </div>
-          <ImgNewsLetter />
+          <ImgNewsLetter width="100%" />
         </Card>
       </Section>
       <Footer />

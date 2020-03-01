@@ -1,30 +1,16 @@
 import styled from "styled-components";
+import { Medium } from "../../utils/styles";
+
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-  margin-top: 108px;
+  margin-top: 85px;
   display: flex;
   justify-content: space-around;
 
-  .be-constante {
-    z-index: 2;
-    margin-top: 83px;
-    span {
-      margin-bottom: 16px;
-    }
-    img {
-      width: 98px;
-      height: 98px;
-      margin-left: 20px;
-      transform: scale(1);
-      animation: pulse 2s infinite;
-      cursor: pointer;
-
-      &:hover {
-        transform: scale(1);
-        animation: pulse 4s;
-      }
-    }
+  .image-iphone {
+    width: auto;
+    height: auto;
   }
 
   div {
@@ -51,15 +37,27 @@ export const Container = styled.div`
       text-transform: uppercase;
       color: #ffff;
     }
-    span {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 21px;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      opacity: 0.6;
-      color: #ffff;
+    @media (max-width: ${Medium}) {
+      h1 {
+        font-weight: 600;
+        font-size: 33px;
+        line-height: 49px;
+      }
+      label {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.09em;
+
+        margin: 32px 0 0;
+      }
+    }
+  }
+
+  @media (max-width: ${Medium}) {
+    margin-top: 40px;
+
+    .image-iphone {
+      display: none;
     }
   }
 
