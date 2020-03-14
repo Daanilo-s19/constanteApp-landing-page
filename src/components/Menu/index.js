@@ -19,39 +19,49 @@ export default function MenuBar(props) {
   });
 
   return (
-    <NavBar data-aos="fade-up" style={scroll > 523 ? scrollActivated : null}>
+    <NavBar data-aos="zoom-in" style={scroll > 523 ? scrollActivated : null}>
       <LogoConstante />
       <Menu>
-        <li
-          onClick={() => setItem("Início")}
-          className={item === "Início" ? "clickMenu" : null}
-        >
-          Início
-        </li>
-        <li
-          onClick={() => setItem("Benefícios")}
-          className={item === "Benefícios" ? "clickMenu" : null}
-        >
-          Benefícios
-        </li>
-        <li
-          onClick={() => setItem("Sobre")}
-          className={item === "Sobre" ? "clickMenu" : null}
-        >
-          Sobre
-        </li>
-        <li
-          onClick={() => setItem("Blog")}
-          className={item === "Blog" ? "clickMenu" : null}
-        >
-          Blog
-        </li>
-        <li
-          onClick={() => setItem("Contato")}
-          className={item === "Contato" ? "clickMenu" : null}
-        >
-          Contato
-        </li>
+        <a href="#">
+          <li
+            onClick={() => setItem("Início")}
+            className={item === "Início" ? "clickMenu" : null}
+          >
+            Início
+          </li>
+        </a>
+        <a href="#beneficios">
+          <li
+            onClick={() => setItem("Benefícios")}
+            className={item === "Benefícios" ? "clickMenu" : null}
+          >
+            Benefícios
+          </li>
+        </a>
+        <a href="#sobre">
+          <li
+            onClick={() => setItem("Sobre")}
+            className={item === "Sobre" ? "clickMenu" : null}
+          >
+            Sobre
+          </li>
+        </a>
+        <a href="#" title="Em breve">
+          <li
+            onClick={() => setItem("Blog")}
+            className={item === "Blog" ? "clickMenu" : null}
+          >
+            Blog
+          </li>
+        </a>
+        <a href="#contato">
+          <li
+            onClick={() => setItem("Contato")}
+            className={item === "Contato" ? "clickMenu" : null}
+          >
+            Contato
+          </li>
+        </a>
       </Menu>
       <div style={{ width: "165px", height: "28px" }}></div>
     </NavBar>

@@ -23,7 +23,7 @@ function App() {
     <>
       <MenuBar />
       <Hero>
-        <Header>
+        <Header id="header">
           <FormEmail title="Junte-se à versão beta" />
         </Header>
       </Hero>
@@ -31,7 +31,7 @@ function App() {
       <Section>
         <Pointer />
         <Card>
-          <NossoObjetivo width="100%" />
+          <NossoObjetivo width="100%" id="beneficios" />
           <h2>
             É mudar a vida das pessoas
             <br /> através de bons hábitos

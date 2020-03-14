@@ -11,6 +11,7 @@ export default function Banner(props) {
       data-aos="fade-in"
       data-aos-easing="linear"
       data-aos-duration="1500"
+      id="sobre"
     >
       <img src={celulares} alt="celulares" />
       <MudeDeVida />

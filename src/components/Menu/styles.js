@@ -28,8 +28,12 @@ export const Menu = styled.ul`
   @media (max-width: ${Medium}) {
     display: none;
   }
+  a {
+    color: rgba(255, 255, 255, 0.6);
+  }
   li {
     margin: 0 18px;
+
     &:hover {
       color: rgba(255, 255, 255, 1);
       font-weight: bold;

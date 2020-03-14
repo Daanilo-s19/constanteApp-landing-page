@@ -11,6 +11,7 @@ export const Container = styled.div`
   margin-bottom: 136px;
 
   span {
+    display: block;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -39,7 +40,7 @@ export const Container = styled.div`
     align-items: center;
     top: 430px;
   }
-  @media (max-width: ${Medium}) {
+  @media (max-width: ${Small}) {
     margin-top: -40px;
     span {
       display: none;

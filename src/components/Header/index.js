@@ -6,7 +6,7 @@ import { Container } from "./styles";
 export default function Header(props) {
   const { children } = props;
   return (
-    <Container>
+    <Container data-aos="zoom-in">
       <div>
         <VivaMelhor />
         <h1>
