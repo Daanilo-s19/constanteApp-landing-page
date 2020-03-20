@@ -5,7 +5,7 @@ export const Container = styled.div`
   height: auto;
   display: flex;
   justify-content: space-around;
-  /* margin: 124px 0; */
+  margin: 0 0 124px;
 
   @media (max-width: ${Medium}) {
     flex-direction: column;
