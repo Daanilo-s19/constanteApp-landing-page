@@ -7,6 +7,7 @@ export default function Footer(props) {
       <Instagram data-aos="zoom-in-down" width="100%" />
       <span>Nosso contato</span>
       <a href="www.google.com">contato@constante.app</a>
+      <div className="line-border"></div>
       <div>
         <span>© 2020 Constante. Todos os direitos reservados. </span>
       </div>

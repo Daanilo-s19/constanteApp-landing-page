@@ -14,7 +14,9 @@ import { ReactComponent as NossoObjetivo } from "../src/assets/NossoObjetivo.svg
 import { ReactComponent as ImgObjetivo } from "./assets/banner1.svg";
 import { ReactComponent as NewsLetter } from "../src/assets/newsletter.svg";
 import { ReactComponent as ImgNewsLetter } from "../src/assets/ImgNewsLetter.svg";
-import icon from "./assets/Ellipse46.png";
+import habitoAssets from "./assets/habito.png";
+import menteAssets from "./assets/mente.png";
+import melhoreAssets from "./assets/melhore.png";
 function App() {
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -32,10 +34,7 @@ function App() {
         <Pointer />
         <Card>
           <NossoObjetivo width="100%" id="beneficios" />
-          <h2>
-            É mudar a vida das pessoas
-            <br /> através de bons hábitos
-          </h2>
+          <p>É mudar a vida das pessoas através de bons hábitos</p>
           <ImgObjetivo width="100%" />
         </Card>
         <ListItem
@@ -44,30 +43,34 @@ function App() {
               title: "Hábitos constantes",
               subtitle:
                 "Crie hábitos variados e recorrentes, sinta-se sempre motivado.",
-              icon: icon
+              icon: habitoAssets
             },
             {
               title: "Relaxe sua mente",
               subtitle:
                 "Fique com a mente tranquila durante o dia com resumos diários e lembretes antecipados.",
-              icon: icon
+              icon: menteAssets
             },
             {
               title: "Melhore todos os dia",
               subtitle:
                 "Acompanhe os dias que você falhou e faça com que eles valham na próxima vez.",
-              icon: icon
+              icon: melhoreAssets
             }
           ]}
         />
         <Banner />
         <Card>
           <div>
-            <NewsLetter width="100%" />
-            <h2>
+            <NewsLetter
+              width="auto"
+              style={{ marginBottom: "30px" }}
+              preserveAspectRatio="xMinYMin meet"
+            />
+            <p>
               Fique por dentro do que estamos construindo <br /> e dicas para
               viver melhor.
-            </h2>
+            </p>
             <FormEmail backgroundInput={true} title="Inscreva-se" />
           </div>
           <ImgNewsLetter width="100%" />

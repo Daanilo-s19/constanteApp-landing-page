@@ -10,7 +10,8 @@ export default function Header(props) {
       <div>
         <VivaMelhor />
         <h1>
-          Chega de altos <br /> e baixos, seja constante.
+          Chega de altos e baixos,
+          <br /> seja constante.
         </h1>
         <label>estamos em fase de testes</label>
         {children}

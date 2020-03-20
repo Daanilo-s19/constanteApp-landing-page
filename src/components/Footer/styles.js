@@ -12,9 +12,21 @@ export const Container = styled.footer`
   justify-content: center;
   position: relative;
   z-index: 6;
+
+  .line-border {
+    width: 100%;
+    height: 1px;
+    padding: 0;
+    background: linear-gradient(
+      269.14deg,
+      rgba(180, 180, 184, 0) 0.91%,
+      rgba(180, 180, 184, 0.7) 51.49%,
+      rgba(180, 180, 184, 0) 100%
+    );
+  }
   div {
     width: 80%;
-    border-top: 1px solid #909090;
+    /* border-top: 1px solid #909090; */
     text-align: center;
     padding-top: 24px;
     span {

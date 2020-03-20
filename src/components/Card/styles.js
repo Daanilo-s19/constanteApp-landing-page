@@ -7,21 +7,34 @@ export const Content = styled.section`
   padding: 30px;
   background: #009a93;
   border-radius: 20px;
-
+  margin-bottom: 120px;
   display: flex;
   align-items: center;
   justify-content: space-around;
 
-  h2 {
+  p {
+    width: 100%;
     font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
+    font-weight: 500;
+    font-size: 20px;
     color: #c7f9e5;
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
   }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    p {
+      margin: 0;
+    }
+  }
+
   @media (max-width: ${Medium}) {
     flex-direction: column;
-    h2 {
+    p {
       font-size: 16px;
       line-height: 24px;
       text-align: center;

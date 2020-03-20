@@ -7,7 +7,8 @@ export const Container = styled.section`
   width: 100%;
   height: auto;
   background: #ffffff;
-  border-radius: 40px 40px 0 0;
+  box-shadow: 0px 0px 132px rgba(0, 25, 23, 0.1);
+  border-radius: 30px 30px 0 0;
   /* margin-top: -100px; */
   /* padding: 136px 0; */
   display: flex;

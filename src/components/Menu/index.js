@@ -20,14 +20,16 @@ export default function MenuBar(props) {
 
   return (
     <NavBar data-aos="zoom-in" style={scroll > 523 ? scrollActivated : null}>
-      <LogoConstante />
+      <div>
+        <LogoConstante />
+      </div>
       <Menu>
         <a href="#">
           <li
-            onClick={() => setItem("Início")}
-            className={item === "Início" ? "clickMenu" : null}
+            onClick={() => setItem("Objetivo")}
+            className={item === "Objetivo" ? "clickMenu" : null}
           >
-            Início
+            Objetivo
           </li>
         </a>
         <a href="#beneficios">
@@ -40,30 +42,21 @@ export default function MenuBar(props) {
         </a>
         <a href="#sobre">
           <li
-            onClick={() => setItem("Sobre")}
-            className={item === "Sobre" ? "clickMenu" : null}
+            onClick={() => setItem("Baixar app")}
+            className={item === "Baixar app" ? "clickMenu" : null}
           >
-            Sobre
+            Baixar app
           </li>
         </a>
-        <a href="#" title="Em breve">
+        <a href="#" title="Em breve" className="blog">
           <li
-            onClick={() => setItem("Blog")}
-            className={item === "Blog" ? "clickMenu" : null}
+            onClick={() => setItem("Acessar Blog")}
+            className={item === "Acessar Blog" ? "clickMenu" : null}
           >
-            Blog
-          </li>
-        </a>
-        <a href="#contato">
-          <li
-            onClick={() => setItem("Contato")}
-            className={item === "Contato" ? "clickMenu" : null}
-          >
-            Contato
+            Acessar Blog
           </li>
         </a>
       </Menu>
-      <div style={{ width: "165px", height: "28px" }}></div>
     </NavBar>
   );
 }
