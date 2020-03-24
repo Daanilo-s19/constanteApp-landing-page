@@ -63,7 +63,7 @@ function App() {
         <Card>
           <div>
             <NewsLetter
-              width="auto"
+              width="100%"
               style={{ marginBottom: "30px" }}
               preserveAspectRatio="xMinYMin meet"
             />

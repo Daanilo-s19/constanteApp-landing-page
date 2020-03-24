@@ -32,6 +32,7 @@ export const Content = styled.div`
     margin-bottom: 16px;
   }
   span {
+    /* width: 531px; */
     font-style: normal;
     font-weight: normal;
     font-size: 18px;

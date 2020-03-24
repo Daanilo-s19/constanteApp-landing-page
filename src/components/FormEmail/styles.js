@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { Medium } from "../../utils/styles";
 export const Form = styled.form`
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   margin-top: 18px;
 
   button {
@@ -17,6 +18,12 @@ export const Form = styled.form`
     text-align: center;
     color: #009a93;
     margin-left: 16px;
+    cursor: pointer;
+
+    &:hover {
+      transition: 2s;
+      opacity: 0.6;
+    }
   }
 
   input {
@@ -48,5 +55,13 @@ export const Form = styled.form`
       width: 100%;
       margin: 0 0 10px;
     }
+  }
+
+  span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.07em;
+    color: #59e0c2;
   }
 `;

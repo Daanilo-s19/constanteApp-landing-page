@@ -38,7 +38,10 @@ export const Container = styled.div`
 
   @media (max-width: ${Medium}) {
     align-items: center;
-    top: 430px;
+    margin-top: -40px;
+    span {
+      display: none;
+    }
   }
   @media (max-width: ${Small}) {
     margin-top: -40px;

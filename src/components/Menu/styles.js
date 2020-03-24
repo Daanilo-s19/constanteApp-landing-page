@@ -7,22 +7,34 @@ export const NavBar = styled.nav`
   height: 65px;
   justify-content: space-around;
   align-items: center;
-  padding: 0 36px;
+  /* padding: 0 36px; */
   margin-top: 36px;
   width: 100%;
   top: 0;
 
+  .dropdown-style {
+    width: 120px;
+    text-align: right;
+    margin: 0;
+  }
+  .dropdown-item-style {
+    span {
+      color: rgba(0, 154, 147, 1);
+      line-height: 21px;
+      font-size: 14px;
+    }
+  }
+
   div {
-    width: 25%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 
   @media (max-width: ${Medium}) {
-    padding: 0 18px;
-    div {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
+    padding: 0 10px;
   }
 `;
 export const Menu = styled.ul`
@@ -43,7 +55,7 @@ export const Menu = styled.ul`
     color: rgba(255, 255, 255, 0.6);
   }
   li {
-    margin: 0 10px;
+    margin: 0 16px;
 
     &:hover {
       color: rgba(255, 255, 255, 1);
